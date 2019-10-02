@@ -8,9 +8,8 @@
   (a)类型：ip是整型指针 值：整型数在内存中的地址；类型：i是一个整型数；类型：r是一个引用，绑定i 值：r==i；
   (b)类型：i是一个整型数；ip是一个整型指针； 值：ip的值为0
   (c)类型：ip是一个整型指针；ip2是一个整型数 值：所指整型数在内存中的地址；
-## 2.35
-' 
-  #include<iostream>
+## 2.35 
+  '#include<iostream>'
   #include<typeinfo>
   int main(){
     const int i = 42;
