@@ -9,7 +9,7 @@
   (b)类型：i是一个整型数；ip是一个整型指针； 值：ip的值为0
   (c)类型：ip是一个整型指针；ip2是一个整型数 值：所指整型数在内存中的地址；
 ## 2.35 
-```
+```C++
   #include<iostream>
   #include<typeinfo>
   int main(){
@@ -29,7 +29,7 @@
   }
   ```
 ## 3.4
-```
+```C++
   #include<iostream>
   #include<string>
   int main(){
