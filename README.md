@@ -47,7 +47,7 @@
   }
 ```
 ## 3.5
-```
+```C++
   #include<iostream>
   #include<string>
   int main(){
