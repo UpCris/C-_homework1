@@ -28,4 +28,44 @@
   return 0;
   }
   ```
+## 3.4
+```
+  #include<iostream>
+  #include<string>
+  int main(){
+    string s1,s2;
+    std::cin>>s1>>s2;
+    auto len1 s1.size();
+    auto len2 s2.size();
+    if (len1==len2)
+      std::cout<<len1<<len2<<std::endl;
+    else if(len1>len2)
+      std::cout<<len1-len2<<std::endl;
+    else
+      stdcout<<len2-len1<<std::endl;
+    return 0;
+  }
+```
+## 3.5
+```
+  #include<iostream>
+  #include<string>
+  int main(){
+    char cont = 'y';
+    string s;
+    string result;
+    while(stdcin>>s){
+      if(!result.size())
+        result += s;
+      else
+        result = result+" "+s;
+      std::cin>>cont;
+      if(cont=='y'||cont=='Y')
+        continue;
+      else
+        break;
+    }
+    return 0;
+  }
+```
  
