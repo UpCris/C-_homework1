@@ -9,7 +9,8 @@
   (b)类型：i是一个整型数；ip是一个整型指针； 值：ip的值为0
   (c)类型：ip是一个整型指针；ip2是一个整型数 值：所指整型数在内存中的地址；
 ## 2.35 
-  '#include<iostream>'
+```
+  #include<iostream>
   #include<typeinfo>
   int main(){
     const int i = 42;
@@ -26,5 +27,5 @@
     std::cout<<typeid(k2).name()<<std::endl;
   return 0;
   }
-  '
+  ```
  
