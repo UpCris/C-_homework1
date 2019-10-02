@@ -68,4 +68,62 @@
     return 0;
   }
 ```
+## 3.20
+```C++
+#include<iostream>
+#include<vector>
+#include<stdafx.h>
+using namespace;
+int main()
+{
+	vector<int> vint;
+	_int64 ival;
+	cout << "请输入一组数字,以其他非数字字符结束：" << endl;
+	while (cin >> ival)
+		vint.push_back(ival);
+	if (vint.size()==0)
+	{
+		cout << "没有一个元素" << endl;
+		return -1;
+	}
+	cout << "相邻两项的和依次是：" << endl;
+	//利用decltype推断i的类型
+	for (decltype (vint.size()) i = 0; i < vint.size()-1; i+=2)
+	{
+		//求相邻两项的和
+		cout << vint[i] + vint[i + 1] << " ";
+		//每五行输出五个数字
+		if ((i + 2) % 10 == 0 )
+			cout << endl;
+	}
+	//如果元素是奇数个的话，单独处理最后一个元素
+	if (vint.size()%2!=0)
+		cout<<vint[vint.size()-1];
  
+	return 0;
+	
+}
+```
+## 3.23
+```
+  #include <iostream>
+#include <vector>
+#include<cctype>
+using namespace std;
+int main()
+{
+	vector<int>ivec(10,1);//定义一个int类型的容器ivec
+	int ival;
+	cout<<"请输入10个整型数字！"<<endl;
+	for(vector<int>::iterator iter = ivec.begin();iter<ivec.end();++iter)//使用迭代器访问vector中的元素
+	{
+	   cout<<(*iter)*2<<endl;
+	}
+	   if(ivec.size()==0)//如果容器为空，则输入No element! 并退出
+	{
+	   cout<<"No element!"<<endl;
+	   return -1;
+	}
+	return 0;
+}
+```
