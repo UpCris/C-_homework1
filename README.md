@@ -1,17 +1,33 @@
-# 第一次作业
-## 2.23
+# homework_1
+
+---
+
+### 2.23
   nullptr可以转换成任意其他的指针类型。之后判断p是否指向合法对象，只要把p作为if语句的条件就可以了。如果p的值是nullptr，则条件为假；反之为真。
-## 2.24
+
+---
+---
+### 2.24
   void* 是一种特殊的指针类型，可以用于存放任意对象的地址，p是合法的；
   
   lp是不合法的，因为lp是一个长整型指针，而i只是一个普通整型数，二者的类型不匹配。
-## 2.25
+  
+---
+---
+
+### 2.25
   (a)类型：ip是整型指针 值：整型数在内存中的地址；类型：i是一个整型数；类型：r是一个引用，绑定i 值：r==i；
   
   (b)类型：i是一个整型数；ip是一个整型指针； 值：ip的值为0
  
   (c)类型：ip是一个整型指针；ip2是一个整型数 值：所指整型数在内存中的地址；
-## 2.35 
+
+---
+---
+
+### 2.35
+
+
 ```C++
   #include<iostream>
   #include<typeinfo>
@@ -30,8 +46,14 @@
     std::cout<<typeid(k2).name()<<std::endl;
   return 0;
   }
-  ```
-## 3.4
+
+```
+
+---
+---
+
+### 3.4
+
 ```C++
   #include<iostream>
   #include<string>
@@ -49,7 +71,13 @@
     return 0;
   }
 ```
+
+---
+---
+
 ## 3.5
+
+
 ```C++
   #include<iostream>
   #include<string>
@@ -71,7 +99,11 @@
     return 0;
   }
 ```
-## 3.20
+
+---
+---
+
+### 3.20
 ```C++
 #include<iostream>
 #include<vector>
@@ -107,7 +139,10 @@ int main()
 	
 }
 ```
-## 3.23
+---
+---
+
+### 3.23
 ```
 #include <iostream>
 #include <vector>
@@ -130,7 +165,10 @@ int main()
 	return 0;
 }
 ```
-## 6.10
+---
+---
+
+### 6.10
 ```
 #include<iostream>
 #include<cstdlib>
@@ -152,7 +190,9 @@ int main()
     return 0;
 }
 ```
-## 6.19
+---
+---
+### 6.19
   (a)是不合法的，函数的声明只包含一个参数，而函数的调用提供了两个参数，因此无法编译通过。
 
   (b)是合法的。字面值常量可以作为常量引用形参的值，字符'a'作为char类型形参的值也是可以的。
@@ -161,7 +201,10 @@ int main()
 
   (d)是合法的，vec.begin()和vec.end()类型都是形参所需的vector<int>::iterator，第三个实参3.8可以自动转换为形参所需的int类型。
 
-## 6.39
+---
+---
+
+### 6.39
   (a)第二条是计算两个常量整型的数。
 
   不合法，第二条无法和第一条进行区分。
@@ -174,10 +217,15 @@ int main()
 
   合法。
 
-## 7.16
+---
+---
+
+### 7.16
 类的定义中对于访问说明符出现的位置和次数没有限定。在类中应当将接口定义在public说明符之后，而将成员变量定义在private说明符之后。
 
-## 7.27
+---
+---
+### 7.27
 ```C++
 #include <iostream>
 #include <string>
@@ -255,15 +303,19 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+---
+---
 
-## 7.49
+### 7.49
 ```C++
 Sales_data& combine(Sales_data rhs); // 将s的值赋给形参rhs
 Sales_data& combine(Sales_data& rhs); // 直接将s赋给rhs，也就是传引用
 Sales_data& combine(const Sales_data& rhs) const; // 错误，this指针将会变成底层const，无法修改this指向的的内容
 ```
 
-## 7.58
+---
+---
+### 7.58
 static double rate = 6.5;
 
 类的静态成员变量需要在类外初始化。
@@ -275,3 +327,4 @@ double Example::rate=6.5;
 static声明的类静态数据成员，其实体远在main()函数开始之前就已经在全局数据段中诞生了，这时候类对象的生命期还没开始。
 
 static const int vecSize = 20;//因为是const 程序就不再试图去初始化它
+---
